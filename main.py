@@ -1,4 +1,4 @@
-```python
+
 import math
 
 def is_prime(n):
@@ -19,4 +19,3 @@ def primes(max=10):
     return primes
 
 print(primes(10))
-```

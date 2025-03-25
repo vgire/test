@@ -22,4 +22,3 @@ export function primes(max: number = 10): number[] {
   return primes;
 }
 
-console.log(primes(10));

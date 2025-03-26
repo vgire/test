@@ -1,4 +1,4 @@
-function isPrime(n: number): boolean {
+export function isPrime(n: number): boolean {
   if (n < 2) {
       return false;
   }
@@ -10,10 +10,10 @@ function isPrime(n: number): boolean {
   return true;
 }
 
-function primes(max: number = 10): number[] {
+export function primes(max: number = 10): number[] {
   const primes: number[] = [];
   let num = 2;
-  while (primes.length <= max) {
+  while (primes.length < max) {
       if (isPrime(num)) {
           primes.push(num);
       }

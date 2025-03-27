@@ -13,7 +13,7 @@ function isPrime(n: number): boolean {
 function primes(max: number = 10): number[] {
   const primes: number[] = [];
   let num = 2;
-  while (primes.length <= max) {
+  while (primes.length < max) {
       if (isPrime(num)) {
           primes.push(num);
       }
@@ -22,4 +22,7 @@ function primes(max: number = 10): number[] {
   return primes;
 }
 
-console.log(primes(10));
+export { primes, isPrime };
+if (import.meta.url === `file://${process.argv[1]}`) {
+  console.log(primes(10));
+}

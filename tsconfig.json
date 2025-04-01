@@ -4,10 +4,12 @@
     "outDir": "dist",
     "resolveJsonModule": true,
     "target": "es2022",
-    "module": "node16",
-    "moduleResolution": "node16",
-    "strictNullChecks": true
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "isolatedModules": true
   },
   "include": ["src/**/*"],
-  "exclude": ["**/*.spec.ts"]
+  "exclude": ["**/*.spec.ts", "node_modules"]
 }

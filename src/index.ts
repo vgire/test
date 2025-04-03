@@ -13,7 +13,7 @@ function isPrime(n: number): boolean {
 function primes(max: number = 10): number[] {
   const primes: number[] = [];
   let num = 2;
-  while (primes.length <= max) {
+  while (primes.length < max) {
       if (isPrime(num)) {
           primes.push(num);
       }

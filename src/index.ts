@@ -22,4 +22,4 @@ export function primes(max: number = 10): number[] {
   return primes;
 }
 
-console.log(primes(10));
+// Removed console.log for production code

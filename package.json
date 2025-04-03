@@ -7,8 +7,7 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "npx tsc",
-    "server": "node dist/index.js",
-
+    "server": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
